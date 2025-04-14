@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Workbench&display=swap');
+
+body {
+    background-image: url("../noise.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+
+    font-family: "Workbench", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    animation: scroll_background 20s linear infinite;
+}
+
+@keyframes scroll_background {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.maincard {
+    border: 2px;
+    border-style: dotted;
+    border-color: rgb(216, 0, 0);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.redborder {
+    border: 2px;
+    border-style: dotted;
+    border-color: rgb(216, 0, 0);
+    padding: 10px;
+}
+
+.info {
+    border: 2px;
+    border-style: dotted;
+    border-color: rgb(216, 0, 0);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info h1 {
+    font-size: 30px;
+}
+
+.logoimg {
+    min-width: 128px;
+    min-height: 80px;
+    width: 128px;
+    height: 80px;
+}
+
+.horizontal_divider {
+    border-top: 3px dotted #bbb;
+    margin: 5px 0;
+}
+
+.flexblock {
+    display: flex;
+    gap: 10px;
+}
+
+.member_list {
+    border: 2px;
+    border-style: dotted;
+    border-color: rgb(216, 0, 0);
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.member_list h1 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.member_list a {
+    font-size: 20px;
+}
+
+.member_list h2 {
+    font-size: 15px;
+    color: rgb(158, 158, 158);
+}
+
+.member_item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.member_info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.icon_container {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.left_pane {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.discography {
+    /* border: 2px;
+    border-style: dotted;
+    border-color: rgb(216, 0, 0);
+    padding: 10px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 300px;
+}
+
+.panes {
+    display: flex;
+    gap: 10px;
+}   
+
+@media only screen and (max-width: 768px) {
+    .panes {
+        flex-direction: column;
+    }
+}
